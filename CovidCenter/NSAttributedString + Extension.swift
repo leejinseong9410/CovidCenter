@@ -12,6 +12,7 @@ extension NSAttributedString {
         let font = UIFont.systemFont(ofSize: 12)
         let attributes: [NSAttributedString.Key: Any] = [.font: font]
         
-        return (NSAttributedString(string: string, attributes: attributes))
+        return NSAttributedString(string: string,
+                                   attributes: attributes)
     }
 }
